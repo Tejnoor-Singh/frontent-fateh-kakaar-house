@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.nav-container {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  flex-direction: column;
+  background-color: rgb(23, 23, 78);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #f58934;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-links-container,
+.user-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav-link,
+.user-link {
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: fit-content;
+
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+  /* width: ; */
+}
+.form-same-class {
+  margin: 0.5rem 0;
+}
+.register-submit-button {
+  width: 100%;
+  background-color: rgb(23, 23, 78);
+  color: #f58934;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-family: "Oswald", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-heading {
+  font-size: 2rem;
+  color: #f58934;
+  font-family: "Oswald", sans-serif;
+}
+.form-box-heading {
+  color: rgb(23, 23, 78);
+  font-family: "Oswald", sans-serif;
+}
+.form-label-text {
+  font-family: "Oswald", sans-serif;
+  color: rgb(23, 23, 78);
+}
+.footer {
+  height: fit-content;
+  background-color: rgb(48, 44, 44);
+  padding: 10px;
+}
+.footer-logo {
+  height: 80px;
+  width: 80px;
+}
+.footer-content {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  margin: 0.5rem 0;
+}
+.footer-heading {
+  font-size: 1.5rem;
+  color: #f58934;
+}
+.footer-subheading {
+  color: #f58934;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.footer-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.footer-map {
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar-links-container {
+    gap: 1rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-links-container {
+    gap: 1.5rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}

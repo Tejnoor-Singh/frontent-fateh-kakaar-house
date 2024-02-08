@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.nav-container {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  flex-direction: column;
+  background-color: rgb(23, 23, 78);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #f58934;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-links-container,
+.user-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav-link,
+.user-link {
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.front-photo {
+  width: 100vw;
+  height: 50vh;
+}
+.inside-photo-text {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inside-photo {
+  width: 90vw;
+  height: 40%;
+  border-radius: 10px;
+}
+.about-us-text {
+  width: 90%;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  /* letter-spacing: 2px; */
+  word-spacing: 8px;
+}
+.about-us {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  color: #f58934;
+}
+.card-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+.display-card {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  flex-direction: column;
+}
+.card {
+  background-color: rgb(215, 118, 0);
+  padding: 1rem;
+}
+.card-text {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  color: rgb(23, 23, 78);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.card-button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 30px;
+  background-color: rgb(23, 23, 78);
+  color: #f58934;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+.footer {
+  /* width: 80vw; */
+  height: fit-content;
+  background-color: rgb(48, 44, 44);
+  padding: 10px;
+}
+.footer-logo {
+  height: 80px;
+  width: 80px;
+}
+.footer-content {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  margin: 0.5rem 0;
+}
+.footer-heading {
+  font-size: 1.5rem;
+  color: #f58934;
+}
+.footer-subheading {
+  color: #f58934;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.footer-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.footer-map {
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .front-photo {
+    width: 100vw;
+    height: 65vh;
+  }
+  .about-us {
+    padding-bottom: 1rem;
+  }
+  .inside-photo {
+    width: 80vw;
+    height: 40%;
+  }
+  .about-us-text {
+    font-size: 1.2rem;
+    padding: 3rem;
+  }
+  .display-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar-links-container {
+    gap: 1rem;
+  }
+  .front-photo {
+    width: 100vw;
+    height: 85vh;
+  }
+  .display-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-links-container {
+    gap: 1.5rem;
+  }
+  .front-photo {
+    width: 100%;
+    height: 85vh;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-us-text {
+    font-size: 1.5rem;
+  }
+  .about-us {
+    font-size: 4rem;
+  }
+  .inside-photo {
+    max-width: 1000px;
+  }
+  .display-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
